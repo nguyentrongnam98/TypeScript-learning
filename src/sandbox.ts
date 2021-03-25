@@ -78,9 +78,52 @@ var test: (name:string , age:number) => string = function(name,age){
 var arrow = (a:string , b:string) :string => {
     return `${a} -- ${b}`
 }
-console.log(trave(1,2));
-console.log(test('Nam',23))
-console.log(arrow('NGuyen','Nam'));
+// console.log(trave(1,2));
+// console.log(test('Nam',23))
+// console.log(arrow('NGuyen','Nam'));
+
+interface hero {
+    name:string;
+    skill:string[];
+    mana:number;
+    mau:number;
+    ultimate(x:string):void;
+}
+
+class Ashe implements hero {
+    name:string;
+    skill:string[];
+    mana:number;
+    mau:number;
+    constructor(name:string, skill:string[], mana:number, mau:number){
+        this.name = name;
+        this.skill = skill;
+        this.mana = mana;
+        this.mau = mau;
+    }
+    ultimate<T>(R:T):void{
+        console.log(`Chieu cuoi la ${R}`);
+        
+    }
+}
+
+const newAshe = new Ashe('Ashe',['one','two','three'],100,100)
+console.log(newAshe);
+
+newAshe.ultimate<string>('dcm')
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
