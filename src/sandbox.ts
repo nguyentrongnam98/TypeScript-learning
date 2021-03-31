@@ -110,7 +110,7 @@ class Ashe implements hero {
 const newAshe = new Ashe('Ashe',['one','two','three'],100,100)
 console.log(newAshe);
 
-newAshe.ultimate<string>('dcm')
+newAshe.ultimate<string>('dcm12')
 
 
 

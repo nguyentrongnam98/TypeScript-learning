@@ -80,4 +80,4 @@ class Ashe {
 }
 const newAshe = new Ashe('Ashe', ['one', 'two', 'three'], 100, 100);
 console.log(newAshe);
-newAshe.ultimate('dcm');
+newAshe.ultimate('dcm12');

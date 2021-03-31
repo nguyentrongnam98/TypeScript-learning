@@ -1,0 +1,3 @@
+class Quanlygiohang {
+}
+export {};

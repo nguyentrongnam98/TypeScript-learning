@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>TypeScript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+        .menu {
+            min-height: 200px;
+            background: url(menu.png) no-repeat;
+        }
+        .form-group {
+            width: 100%;
+            margin-top: 9px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .price {
+            margin-top: 15px;
+        }
+        .info {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="container-fluid">
+            <!-- <img src="menu.png" alt="menu"> -->
+        </div>
+    </div>
+    <div class="container" id="noidung">
+        <div class="row thongbao">
+            <div class="col-sm-12">
+                <div class="alert alert-success" role="alert">
+                    <i class="fas fa-check-square"></i><strong> Tên sản phẩm </strong> Đã được thêm vào giỏ hàng
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <hr>
+                <h3 class="tdto">Giỏ hàng<small>(3 sản phẩm)</small></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8" id="danhsachsanpham">
+                <div class="card">
+                <div class="row one card-block">
+                    <div class="col-sm-3">
+                        <img src="sp1.jpg" alt="sp1" class="img-fluid">
+                    </div>
+                    <div class="col-sm-3 info">
+                        <a href="" class="tieude">Ly nhựa 2 lớp LocknLock kèm ống hút HAP507 750ml</a>
+                        <div class="noidungsp">
+                            Cung cấp bởi Tiki
+                        </div>
+                    </div>
+                    <div class="col-sm-2 price">
+                          129.000 đ
+                    </div>
+                    <div class="col-sm-1">
+                        <input type="number" class="form-group" min="1" value="1"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="btn btn-group">
+                            <buuton class="btn btn-outline-success mua">Mua</buuton>
+                            <button class="btn btn-outline-danger xoa">Xóa</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                <div class="row one card-block">
+                    <div class="col-sm-3">
+                        <img src="sp2.jpg" alt="sp2" class="img-fluid">
+                    </div>
+                    <div class="col-sm-3 info">
+                        <a href="" class="tieude">Nồi cơm điện cao cấp 2l</a>
+                        <div class="noidungsp">
+                            Cung cấp bởi Tiki
+                        </div>
+                    </div>
+                    <div class="col-sm-2 price">
+                          229.000 đ
+                    </div>
+                    <div class="col-sm-1">
+                        <input type="number" class="form-group" min="1" value="1"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="btn btn-group">
+                            <buuton class="btn btn-outline-success mua">Mua</buuton>
+                            <button class="btn btn-outline-danger xoa">Xóa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row sanphamkhac">
+                <div class="col-sm-12">
+                    <h3 class="tdto">San pham khac</h3>
+                </div>
+               <div class="col-sm-4">
+                   <div class="card">
+                       <img src="sp1.jpg" alt="sp1" class="card-img-top img-fluid"/>
+                       <div class="card-body">
+                           <h4 class="card-title">Cốc nhựa</h4>
+                           <p class="card-text mota">
+                               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam enim harum ea ullam inventore corporis eum, suscipit necessitatibus soluta quam, doloremque aut officiis iure commodi provident pariatur saepe. Tempora, ratione?
+                           </p>
+                           <b>Gia: 125.000 đ</b>
+                           <a href="#" class="btn btn-outline-primary btn-block">Mua ngay</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-sm-4">
+                <div class="card">
+                    <img src="sp1.jpg" alt="sp1" class="card-img-top img-fluid"/>
+                    <div class="card-body">
+                        <h4 class="card-title">Cốc nhựa</h4>
+                        <p class="card-text mota">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam enim harum ea ullam inventore corporis eum, suscipit necessitatibus soluta quam, doloremque aut officiis iure commodi provident pariatur saepe. Tempora, ratione?
+                        </p>
+                        <b>Gia: 125.000 đ</b>
+                        <a href="#" class="btn btn-outline-primary btn-block">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="sp1.jpg" alt="sp1" class="card-img-top img-fluid"/>
+                    <div class="card-body">
+                        <h4 class="card-title">Cốc nhựa</h4>
+                        <p class="card-text mota">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam enim harum ea ullam inventore corporis eum, suscipit necessitatibus soluta quam, doloremque aut officiis iure commodi provident pariatur saepe. Tempora, ratione?
+                        </p>
+                        <b>Gia: 125.000 đ</b>
+                        <a href="#" class="btn btn-outline-primary btn-block">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-sm-4" id="tinhgia">
+                <div class="trang card card-block">
+                    <div class="dongtinhg">
+                        <div class="phai float-right">463.000 đ</div>
+                        <div class="trai">Tạm tính :</div>
+                    </div>
+                    <div class="thanhtien">
+                        <div class="phai float-right">
+                            <div class="doto">463.000 đ</div>
+                            <div class="gom">(Đã bao gồm VAT)</div>
+                        </div>
+                        <div class="trai">Tạm tinh:</div>
+                    </div>
+                </div>
+                <a href="" class="btn btn-danger btn-block">Tiến hành đặt hàng</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js" type ="module"></script>
+</body>
+</html>
